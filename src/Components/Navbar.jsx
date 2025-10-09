@@ -12,6 +12,10 @@ const Navbar = () => {
         setclick(!click)
     }
 
+    const handleCloseMenu = () => {
+        setclick(false)
+    }
+
     const [color, setcolor] = useState(false)
 
     const handleNavColor = () => {
@@ -22,10 +26,10 @@ const Navbar = () => {
             setcolor(false)
         }
     }
-   useEffect(() => {
-      window.addEventListener("scroll", handleNavColor)
-   }, [])
-   
+    useEffect(() => {
+        window.addEventListener("scroll", handleNavColor)
+    }, [])
+
 
     return (
         <nav className={`flex justify-between items-center fixed w-full z-50 ${color ? "bg-black/60 backdrop-blur-lg transition-colors duration-500" : ""}`}>
@@ -39,13 +43,17 @@ const Navbar = () => {
                 <Link className="nav-link" to="/pricing">Pricing</Link>
                 <Link className="nav-link" to="/training">Training</Link>
                 <Link className="nav-link" to="/contact">Contact</Link>
+                <div className="sign-up inline-block absolute right-[30px]">
+                    <Link onClick={handleCloseMenu} className=" border rounded-full" style={{ padding: "5px 15px" }} to="/contact">Sign Up</Link>
+                </div>
             </div>
             {/* mobile menu */}
             <div className={`${click ? "active" : "menu"} md:hidden absolute top-[0vh] left-[-100%] h-[100vh] flex flex-col justify-center items-center gap-[20px] text-white bg-black/90 backdrop-blur-lg w-full transition-all duration-500 ease-in-out z-[-1] inset-0`}>
-                <Link className="nav-link" to="/">Home</Link>
-                <Link className="nav-link" to="/pricing">Pricing</Link>
-                <Link className="nav-link" to="/training">Training</Link>
-                <Link className="nav-link" to="/contact">Contact</Link>
+                <Link onClick={handleCloseMenu} className="nav-link" to="/">Home</Link>
+                <Link onClick={handleCloseMenu} className="nav-link" to="/pricing">Pricing</Link>
+                <Link onClick={handleCloseMenu} className="nav-link" to="/training">Training</Link>
+                <Link onClick={handleCloseMenu} className="nav-link" to="/contact">Contact</Link>
+                <Link onClick={handleCloseMenu} className=" border rounded-full hover:bg-white/30 transition-all" style={{ padding: "5px 15px" }} to="/contact">Sign Up</Link>
             </div>
             <div className="hamburger" onClick={handleClick}>
                 {

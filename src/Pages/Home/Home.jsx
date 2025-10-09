@@ -4,7 +4,7 @@ import About from './component/About'
 import Service from './component/Service'
 import CallToAction from "./component/CallToAction"
 import Faq from "./component/Faq"
-import Footer from "./component/Footer"
+
 
 const Home = () => {
   return (
@@ -14,7 +14,6 @@ const Home = () => {
     <Service/>
     <CallToAction/>
     <Faq/>
-    <Footer/>
     </>
   )
 }

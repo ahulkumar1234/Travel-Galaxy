@@ -94,7 +94,7 @@ const Service = () => {
                             <p className="card-desc  text-gray-300 text-sm mt-2">{item.description}</p>
                             <p className="card-price text-blue-300 font-semibold mt-3">{item.price}</p>
                             <p className="card-duration text-gray-400 text-sm">{item.duration}</p>
-                            <button className="service-btn w-full cursor-pointer bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg transition">
+                            <button className="service-btn w-full cursor-pointer bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg transition" style={{padding: "8px 0"}}>
                                 Book Now
                             </button>
                         </div>
