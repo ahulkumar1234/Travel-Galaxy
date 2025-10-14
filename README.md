@@ -7,7 +7,7 @@ It provides an elegant interface for users to explore travel destinations, view 
 ---
 
 ###  Live Demo  
-🔗 [View Galaxy Travel Website](travel-galaxy.vercel.app)
+🔗 [View Galaxy Travel Website](https://travel-galaxy.vercel.app)
 
 ---
 
@@ -51,6 +51,7 @@ It provides an elegant interface for users to explore travel destinations, view 
 ### ⚙️ Installation & Setup  
 
 1. **Clone the repository**  
+```bash
    git clone https://github.com/ahulkumar1234/Travel-Galaxy.git
 
 2. **Navigate to the project directory**
