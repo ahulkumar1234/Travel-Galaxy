@@ -54,15 +54,15 @@ It provides an elegant interface for users to explore travel destinations, view 
    git clone https://github.com/ahulkumar1234/Travel-Galaxy.git
 
 2. **Navigate to the project directory**
-   cd Travel-Galaxy
+   - cd Travel-Galaxy
 
 3. **Install dependencies**
-   npm install
+   - npm install
 
 4. **Run the app locally**
-   npm start
+   - npm start
 5. **Open in browser**
-   http://localhost:5174
+   - http://localhost:5174
 
 
 ### 💡 Future Enhancements
