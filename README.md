@@ -14,16 +14,16 @@ It provides an elegant interface for users to explore travel destinations, view 
 ### 🖼️ Project Screenshots  
 
 #### 🏠 Homepage  
-![Home Page](../React-App/public/Screenshots/home.png)
+![Home Page](public/Screenshots/home.png)
 
 #### 🔐 Login / Sign Up Modal  
-![Login Modal](../React-App/public/Screenshots/Login.jpeg)
+![Login Modal](public/Screenshots/Login.jpeg)
 
 #### 🔐 Login / Sign Up Modal  
-![Login Modal](../React-App/public/Screenshots/sing-up.jpeg)
+![Login Modal](public/Screenshots/sing-up.jpeg)
 
 #### 💻 Responsive Design  
-![Responsive View](../React-App/public/Screenshots/Responsive.jpeg)
+![Responsive View](public/Screenshots/Responsive.jpeg)
 
 ---
 
@@ -55,10 +55,8 @@ It provides an elegant interface for users to explore travel destinations, view 
 
 2. **Navigate to the project directory**
    - cd Travel-Galaxy
-
 3. **Install dependencies**
    - npm install
-
 4. **Run the app locally**
    - npm start
 5. **Open in browser**
