@@ -1,12 +1,12 @@
-
-.nav-link{
+.nav-link {
   position: relative;
   text-decoration: none;
   margin: 8px;
   padding: 5px;
   text-transform: uppercase;
 }
-.nav-link::after{
+
+.nav-link::after {
   position: absolute;
   content: "";
   background-color: white;
@@ -16,13 +16,34 @@
   left: 0;
   transition: all 0.3s ease-in-out;
 }
-.nav-link:hover::after{
+
+.nav-link:hover::after {
   width: 100%;
 }
-nav{
+
+nav {
   padding: 0 30px;
   height: 10vh;
 }
-.active{
+
+.active {
   left: 0%;
 }
+
+.sign-up a {
+  padding: 8px 18px;
+  border: none;
+  border-radius: 9999px;
+  color: white;
+  font-weight: 600;
+  background: linear-gradient(135deg, #00f2fe, #4facfe);
+  box-shadow: 0 0 10px rgba(79, 172, 254, 0.5);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.sign-up a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(79, 172, 254, 0.8);
+}
+
