@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { FaTimes, FaBars } from 'react-icons/fa'
 import { FaEarthAfrica } from "react-icons/fa6";
 import { RiArrowDropDownLine } from "react-icons/ri";
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import './Navbar.css'
 import AuthModal from './signUp-Login/AuthModal';
 import SignUpModal from './signUp-Login/SignUpModal';
@@ -72,12 +72,12 @@ const Navbar = () => {
                 </div>
                 {/* Desktop Menu */}
                 <div className="menu bg-white/20 rounded-4xl backdrop hidden md:block " style={{ padding: "15px" }}>
-                    <Link className="nav-link" to="/">Home</Link>
-                    <Link className="nav-link" to="/pricing">Pricing</Link>
-                    <Link className="nav-link" to="/training">Training</Link>
-                    <Link className="nav-link" to="/contact">Contact</Link>
+                    <NavLink className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")} to="/">Home</NavLink>
+                    <NavLink className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")} to="/pricing">Pricing</NavLink>
+                    <NavLink className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")} to="/training">Training</NavLink>
+                    <NavLink className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")} to="/contact">Contact</NavLink>
                     <div className="sign-up inline-block absolute right-[30px]">
-                        <Link onClick={() => { setismodalopen(true) }} className={`${LoggedUser ? "hidden" : "block"}  border rounded-full`} style={{ padding: "5px 15px" }} to="#">Sign Up</Link>
+                        <NavLink onClick={() => { setismodalopen(true) }} className={`${LoggedUser ? "hidden" : "block"}  border rounded-full`} style={{ padding: "5px 15px" }} to="#">Sign Up</NavLink>
                     </div>
                 </div>
                 {/* User-DropDown */}
@@ -112,13 +112,13 @@ const Navbar = () => {
 
                 {/* mobile menu */}
                 <div className={`${click ? "active" : "menu"} md:hidden absolute top-[0vh] left-[-100%] h-[100vh] flex flex-col justify-center items-center gap-[20px] text-white bg-black/90 backdrop-blur-lg w-full transition-all duration-500 ease-in-out z-[-1] inset-0`}>
-                    <Link onClick={handleCloseMenu} className="nav-link" to="/">Home</Link>
-                    <Link onClick={handleCloseMenu} className="nav-link" to="/pricing">Pricing</Link>
-                    <Link onClick={handleCloseMenu} className="nav-link" to="/training">Training</Link>
-                    <Link onClick={handleCloseMenu} className="nav-link" to="/contact">Contact</Link>
-                    <Link onClick={() => { setclick(false); setismodalopen(true) }} className={`${LoggedUser ? "hidden" : "block"} rounded-full hover:shadow-2xl transition-all`} style={{
+                    <NavLink onClick={handleCloseMenu} className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")} to="/">Home</NavLink>
+                    <NavLink onClick={handleCloseMenu} className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")} to="/pricing">Pricing</NavLink>
+                    <NavLink onClick={handleCloseMenu} className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")} to="/training">Training</NavLink>
+                    <NavLink onClick={handleCloseMenu} className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")} to="/contact">Contact</NavLink>
+                    <NavLink onClick={() => { setclick(false); setismodalopen(true) }} className={`${LoggedUser ? "hidden" : "block"} rounded-full hover:shadow-2xl transition-all`} style={{
                         padding: "5px 15px", background: "linear-gradient(135deg, #00f2fe, #4facfe)", boxShadow: "0 0 10px rgba(79, 172, 254, 0.5)"
-                    }} to={"#"}>Sign up</Link>
+                    }} to={"#"}>Sign up</NavLink>
 
                     {/* User-DropDown */}
                     {LoggedUser && (

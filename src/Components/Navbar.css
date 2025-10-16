@@ -21,6 +21,10 @@
   width: 100%;
 }
 
+.nav-link.active::after {
+  width: 100%;
+}
+
 nav {
   padding: 0 30px;
   height: 10vh;
@@ -46,4 +50,3 @@ nav {
   transform: scale(1.05);
   box-shadow: 0 0 20px rgba(79, 172, 254, 0.8);
 }
-

@@ -12,7 +12,7 @@ const Hero = () => {
                     loop
                     muted
                     playsInline
-                    className='w-[100vw] h-[100vh] object-cover absolute top-0 left-0 z-0'
+                    className='w-[100vw] h-[100vh] object-cover absolute top-0 left-0 z-[-1]'
                 />
                 <div className="content flex flex-col justify-center items-center absolute bottom-0 left-0 w-full h-full bg-gradient-to-b from-black/50 to-transparent">
                     <h1 className=' text-4xl font-bold text-center'>Travel. Galaxies</h1>
