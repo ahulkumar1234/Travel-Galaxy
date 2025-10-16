@@ -71,7 +71,7 @@ const Navbar = () => {
                     <h1 className='text-2xl font-semibold cursor-pointer'>GLX TRVL <span className='text-blue-500 '>.</span></h1>
                 </div>
                 {/* Desktop Menu */}
-                <div className="menu bg-white/20 rounded-4xl backdrop hidden md:block " style={{padding:"15px"}}>
+                <div className="menu bg-white/20 rounded-4xl backdrop hidden md:block " style={{ padding: "15px" }}>
                     <Link className="nav-link" to="/">Home</Link>
                     <Link className="nav-link" to="/pricing">Pricing</Link>
                     <Link className="nav-link" to="/training">Training</Link>
@@ -117,7 +117,8 @@ const Navbar = () => {
                     <Link onClick={handleCloseMenu} className="nav-link" to="/training">Training</Link>
                     <Link onClick={handleCloseMenu} className="nav-link" to="/contact">Contact</Link>
                     <Link onClick={() => { setclick(false); setismodalopen(true) }} className={`${LoggedUser ? "hidden" : "block"} rounded-full hover:shadow-2xl transition-all`} style={{
-                        padding: "5px 15px", background: "linear-gradient(135deg, #00f2fe, #4facfe)", boxShadow: "0 0 10px rgba(79, 172, 254, 0.5)" }} to={"#"}>Sign up</Link>
+                        padding: "5px 15px", background: "linear-gradient(135deg, #00f2fe, #4facfe)", boxShadow: "0 0 10px rgba(79, 172, 254, 0.5)"
+                    }} to={"#"}>Sign up</Link>
 
                     {/* User-DropDown */}
                     {LoggedUser && (

@@ -11,7 +11,7 @@ const Modal = ({handleClickModal}) => {
                     <p className="text-center text-gray-300">Embark on an unforgettable journey through the stars.
                         At Galaxy Travel, we bring your cosmic dreams to life — from moonlight adventures to luxury cruises among Saturn’s rings.
                         Discover beauty beyond Earth and experience the universe like never before.</p>
-                    <Link className="flex justify-center items-center border rounded-full" to="/pricing">See More</Link>
+                    <Link className="flex justify-center items-center border rounded-full" to="/pricing" style={{padding:"8px"}}>See More</Link>
                     <button  className="cross fixed top-1 right-1 cursor-pointer">
                         <RxCross1 onClick={handleClickModal}/>
                     </button>

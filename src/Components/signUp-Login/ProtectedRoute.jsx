@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { toast } from "react-toastify";
 
 const ProtectedRoute = ({ children }) => {
-  const user = localStorage.getItem("DLX Users");
+  const user = localStorage.getItem("DLX ActiveUser");
   const location = useLocation();
 
   useEffect(() => {
