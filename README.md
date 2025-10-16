@@ -49,18 +49,21 @@ It provides an elegant interface for users to explore travel destinations, view 
 ---
 
 ### ⚙️ Installation & Setup  
-
-1. **Clone the repository**  
 ```bash
+
+1. Clone the repository
    git clone https://github.com/ahulkumar1234/Travel-Galaxy.git
 
-2. **Navigate to the project directory**
+2. Navigate to the project directory
    - cd Travel-Galaxy
-3. **Install dependencies**
+
+3. Install dependencies
    - npm install
-4. **Run the app locally**
+
+4. Run the app locally
    - npm start
-5. **Open in browser**
+   
+5. Open in browser
    - http://localhost:5174
 
 
