@@ -71,7 +71,7 @@ const Navbar = () => {
                     <h1 className='text-2xl font-semibold cursor-pointer'>GLX TRVL <span className='text-blue-500 '>.</span></h1>
                 </div>
                 {/* Desktop Menu */}
-                <div className="menu bg-white/20 rounded-4xl backdrop hidden md:block " style={{ padding: "15px" }}>
+                <div className="menu hidden md:block " style={{ padding: "15px" }}>
                     <NavLink className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")} to="/">Home</NavLink>
                     <NavLink className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")} to="/pricing">Pricing</NavLink>
                     <NavLink className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")} to="/training">Training</NavLink>
@@ -85,20 +85,20 @@ const Navbar = () => {
                     <div className="relative hidden md:inline-block  text-left">
                         <button
                             onClick={() => setOpen(!open)}
-                            className="inline-flex justify-center w-full rounded-full border border-gray-300 shadow-sm bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none"
+                            className="inline-flex justify-center w-full rounded-full border"
                             style={{ padding: "6px 15px" }}
                         >
-                            <p>{LoggedUser.name}</p> <RiArrowDropDownLine className='flex justify-center items-center text-xl' />
+                            <p>{LoggedUser.name}</p> <RiArrowDropDownLine className='flex justify-center items-center text-2xl' />
                         </button>
 
                         {open && (
-                            <div className="absolute left-1/2 -translate-x-1/2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-50"
+                            <div className="absolute left-1/2 -translate-x-1/2 transition-all duration-200"
                                 style={{ marginTop: "5px", width: "180px" }}>
-                                <div className="py-1">
-                                    <Link to="/" className="block text-sm text-gray-700 hover:bg-gray-100" style={{ padding: "10px 15px" }}>
+                                <div className="py-1" style={{padding:"4px"}}>
+                                    <Link to="/" className="block text-sm text-white border hover:bg-white/30" style={{ padding: "10px 15px" }}>
                                         Profile
                                     </Link>
-                                    <button onClick={handleLogout} className="w-full text-left text-sm text-gray-700 hover:bg-gray-100 cursor-pointer" style={{ padding: "10px 15px" }}>
+                                    <button onClick={handleLogout} className="w-full text-left text-sm text-white bg-red-600 hover:bg-red-800 cursor-pointer" style={{ padding: "10px 15px" }}>
                                         Logout
                                     </button>
                                 </div>
@@ -125,20 +125,20 @@ const Navbar = () => {
                         <div className="relative inline-block text-left">
                             <button
                                 onClick={() => setOpen(!open)}
-                                className="inline-flex justify-center w-full rounded-full border border-gray-300 shadow-sm bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none"
+                                className="inline-flex justify-center w-full rounded-full border "
                                 style={{ padding: "6px 15px" }}
                             >
-                                <p>{LoggedUser.name}</p> <RiArrowDropDownLine className='flex justify-center items-center text-xl' />
+                                <p>{LoggedUser.name}</p> <RiArrowDropDownLine className='flex justify-center items-center text-2xl' />
                             </button>
 
                             {open && (
-                                <div className="absolute left-1/2 -translate-x-1/2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-50"
+                                <div className="absolute left-1/2 -translate-x-1/2 transition-all duration-200"
                                     style={{ marginTop: "5px", width: "180px" }}>
-                                    <div className="py-1">
-                                        <Link to="/" className="block text-sm text-gray-700 hover:bg-gray-100" style={{ padding: "10px 15px" }}>
+                                    <div className="py-1" style={{padding:"4px"}}>
+                                        <Link to="/" className="block text-sm text-white border hover:bg-white/30" style={{ padding: "10px 15px" }}>
                                             Profile
                                         </Link>
-                                        <button onClick={handleLogout} className="w-full text-left text-sm text-gray-700 hover:bg-gray-100 cursor-pointer" style={{ padding: "10px 15px" }}>
+                                        <button onClick={handleLogout} className="w-full text-left text-sm text-white bg-red-600 hover:bg-red-800 cursor-pointer" style={{ padding: "10px 15px" }}>
                                             Logout
                                         </button>
                                     </div>
