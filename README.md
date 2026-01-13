@@ -66,6 +66,7 @@ It provides an elegant interface for users to explore travel destinations, view 
 5. Open in browser
    - http://localhost:5174
 
+```
 
 ### 💡 Future Enhancements
 
